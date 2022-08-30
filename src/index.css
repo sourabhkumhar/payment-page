@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Product Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Regular'), url('../src/assets/fonts/ProductSans-Regular.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: 'Product Sans Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

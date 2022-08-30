@@ -1,0 +1,17 @@
+.w-lg-25 {
+    width: 25%;
+}
+
+.myContainer {
+    margin-inline: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+    .w-lg-25 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .myContainer {
+        margin-inline: 20px;
+    }
+  }
