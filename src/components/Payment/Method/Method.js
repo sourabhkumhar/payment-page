@@ -78,7 +78,7 @@ export default function Method() {
                 <img width="50px" height="50px" id="iDeal" src={process.env.PUBLIC_URL + "/images/ideal.svg"} alt="" onClick={paymentMethod} className={`pButton col-4 py-3 m-1 border rounded-5 text-center`} style={paymentStyle} />
             </div>
 
-            <h6 className='mt-5 ms-5'>Delivery method</h6>
+            <h6 className='mt-4 ms-5'>Delivery method</h6>
 
             <div className="row mt-4 justify-content-center">
 
@@ -101,11 +101,6 @@ export default function Method() {
                     <img width="50px" height="50px" id="FedEx" src={process.env.PUBLIC_URL + "/images/fedex.svg"} alt="" />
                     <span id="FedEx" className='ms-5'>{currDel ? 'Free' : '$10.00'}</span>
                 </div>
-            </div>
-
-            <div className='text-center'>
-                <span><b>Payment Method:</b> {payMeth}</span> <br />
-                <span><b>Delivery Method:</b> {delMeth}</span>
             </div>
         </>
     )
