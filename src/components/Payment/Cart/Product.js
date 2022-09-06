@@ -39,7 +39,7 @@ export default function Product(props) {
 
                 <p className='col-8 mx-4 text-start'>{name}
                     <br />
-                    <span>{code}</span>
+                    <span>{code} {!editCart && <kbd className='ms-3'>qty: {qty}</kbd>}</span>
                 </p>
 
 
