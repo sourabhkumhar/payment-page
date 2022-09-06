@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import Context from '../../../context/Context';
 
 export default function Method() {
@@ -44,18 +44,13 @@ export default function Method() {
         });
     });
 
-    const [payMeth, setPayMeth] = useState('Not Selected')
-    const [delMeth, setDelMeth] = useState('Not Selected')
-
     const paymentMethod = (e) => {
         const pId = e.target.id;
-        setPayMeth(pId)
         localStorage.setItem('Payment Method', pId)
     }
 
     const deliveryMethod = (e) => {
         const dId = e.target.id;
-        setDelMeth(dId)
         localStorage.setItem('Delivery Method', dId)
     }
 
